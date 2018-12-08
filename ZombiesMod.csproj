@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B6B14CCD-28B1-4A77-A31E-D15E18D7587A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>ZombiesMod</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>ZombiesMod</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants.cs" />
+    <Compile Include="FoodType.cs" />
+    <Compile Include="IProp.cs" />
+    <Compile Include="IAnimatable.cs" />
+    <Compile Include="IWeapon.cs" />
+    <Compile Include="ICraftable.cs" />
+    <Compile Include="IMapObject.cs" />
+    <Compile Include="IIdentifier.cs" />
+    <Compile Include="IInteractable.cs" />
+    <Compile Include="IFood.cs" />
+    <Compile Include="IDeletable.cs" />
+    <Compile Include="IUpdatable.cs" />
+    <Compile Include="ISpawner.cs" />
+    <Compile Include="IValidatable.cs" />
+    <Compile Include="ItemEvent.cs" />
+    <Compile Include="NearbyResource.cs" />
+    <Compile Include="MenuType.cs" />
+    <Compile Include="ItemType.cs" />
+    <Compile Include="Serializables.cs" />
+    <Compile Include="1Serializables.cs" />
+    <Compile Include="2Serializables.cs" />
+    <Compile Include="3Serializables.cs" />
+    <Compile Include="4Serializables.cs" />
+    <Compile Include="5Serializables.cs" />
+    <Compile Include="6Serializables.cs" />
+    <Compile Include="7Serializables.cs" />
+    <Compile Include="8Serializables.cs" />
+    <Compile Include="9Serializables.cs" />
+    <Compile Include="10Serializables.cs" />
+    <Compile Include="11Serializables.cs" />
+    <Compile Include="12Serializables.cs" />
+    <Compile Include="13Serializables.cs" />
+    <Compile Include="14Serializables.cs" />
+    <Compile Include="15Serializables.cs" />
+    <Compile Include="16Serializables.cs" />
+    <Compile Include="17Serializables.cs" />
+    <Compile Include="18Serializables.cs" />
+    <Compile Include="ModController.cs" />
+    <Compile Include="Zombies\ZombiePed.cs" />
+    <Compile Include="Zombies\ZombieTypes\Runner.cs" />
+    <Compile Include="Zombies\ZombieTypes\Walker.cs" />
+    <Compile Include="Wrappers\EntityEventWrapper.cs" />
+    <Compile Include="SurvivorTypes\FriendlySurvivors.cs" />
+    <Compile Include="SurvivorTypes\HostileSurvivors.cs" />
+    <Compile Include="SurvivorTypes\MerryweatherSurvivors.cs" />
+    <Compile Include="Extensions\RandomExtensions.cs" />
+    <Compile Include="Extensions\ComponentId.cs" />
+    <Compile Include="Extensions\CombatMovement.cs" />
+    <Compile Include="Extensions\CombatRange.cs" />
+    <Compile Include="Extensions\ConfigFlags.cs" />
+    <Compile Include="Extensions\CombatAttributes.cs" />
+    <Compile Include="Extensions\CombatAbility.cs" />
+    <Compile Include="Extensions\Alertness.cs" />
+    <Compile Include="Extensions\DamagePack.cs" />
+    <Compile Include="Extensions\SpeechModifier.cs" />
+    <Compile Include="Extensions\FirendlyFireType.cs" />
+    <Compile Include="Extensions\Subtask.cs" />
+    <Compile Include="Extensions\GTAExtensions.cs" />
+    <Compile Include="Extensions\1GTAExtensions.cs" />
+    <Compile Include="Extensions\2GTAExtensions.cs" />
+    <Compile Include="Extensions\3GTAExtensions.cs" />
+    <Compile Include="Extensions\4GTAExtensions.cs" />
+    <Compile Include="Extensions\5GTAExtensions.cs" />
+    <Compile Include="Extensions\6GTAExtensions.cs" />
+    <Compile Include="Extensions\7GTAExtensions.cs" />
+    <Compile Include="Extensions\8GTAExtensions.cs" />
+    <Compile Include="Extensions\9GTAExtensions.cs" />
+    <Compile Include="Extensions\DoorState.cs" />
+    <Compile Include="Extensions\10GTAExtensions.cs" />
+    <Compile Include="Static\Serializer.cs" />
+    <Compile Include="Static\Database.cs" />
+    <Compile Include="Static\Relationships.cs" />
+    <Compile Include="Static\MenuConrtoller.cs" />
+    <Compile Include="Static\Config.cs" />
+    <Compile Include="Scripts\Loot247.cs" />
+    <Compile Include="Scripts\RecruitPeds.cs" />
+    <Compile Include="Scripts\ScriptEventHandler.cs" />
+    <Compile Include="Scripts\ZombieCreator.cs" />
+    <Compile Include="Scripts\MapInteraction.cs" />
+    <Compile Include="Scripts\VehicleRepair.cs" />
+    <Compile Include="Scripts\AnimalSpawner.cs" />
+    <Compile Include="Scripts\ZombieVehicleSpawner.cs" />
+    <Compile Include="PlayerManagement\PlayerVehicles.cs" />
+    <Compile Include="PlayerManagement\PlayerMap.cs" />
+    <Compile Include="PlayerManagement\PedTask.cs" />
+    <Compile Include="PlayerManagement\PlayerGroupManager.cs" />
+    <Compile Include="PlayerManagement\LootPickupType.cs" />
+    <Compile Include="PlayerManagement\PlayerInventory.cs" />
+    <Compile Include="PlayerManagement\PlayerStats.cs" />
+    <Compile Include="PlayerManagement\StatDisplayItem.cs" />
+    <Compile Include="DataClasses\ParticleEffect.cs" />
+    <Compile Include="DataClasses\SpawnBlocker.cs" />
+    <Compile Include="DataClasses\Survivors.cs" />
+    <Compile Include="DataClasses\ItemPreview.cs" />
+    <Compile Include="Controllers\EventTypes.cs" />
+    <Compile Include="Controllers\SurvivorController.cs" />
+    <Compile Include="Controllers\WorldController.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
